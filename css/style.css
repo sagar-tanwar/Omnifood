@@ -1,0 +1,534 @@
+/* // General Styles
+--------------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+
+
+/*// Border Box Fix*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: #555;
+}
+
+section {
+	padding: 50px 0;
+}
+
+ /*// Heading */
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 200%;
+	word-spacing: 3px;
+
+}
+
+
+h2 {	
+	text-align: center;
+
+}
+
+h2::after {
+	content: "";
+	background: #e8930c;
+	height: 2px;
+	width: 100px;
+	display: block;
+	margin: 20px auto;
+}
+
+h3 {
+	font-size: 90%;
+	margin: 10px auto;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+
+/*  // Button  */
+
+.btn , .btn:visited, input[type='submit'] {
+	display: inline-block;
+	text-decoration: none;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+
+.cta , .cta:visited, input[type='submit'] {
+	background: #e8930c;
+	color: white;
+	margin-right: 20px;
+
+}
+
+.cta:active, .cta:hover, input[type='submit']:hover {
+	background: #bf6516;
+}
+
+.gh-btn , .gh-btn:visited {
+	border: 1px solid #e8930c;
+	color: #e8930c;
+
+}
+
+.gh-btn:active , .gh-btn:hover {
+	background: #bf6516;
+	border: 1px solid #bf6516;
+	color: white;
+}
+
+/* // Header Styles
+--------------------------------------------------- */
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero.jpg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+
+}
+
+.logo {
+	height: 100px;
+	float: left;
+}
+
+.logo-black {
+	display: none;
+}
+
+.main-links {
+	float: right;
+	margin-top: 30px;
+}
+
+.main-links a {
+	color: white;
+	padding: 10px 0 ;
+	margin-right: 20px;
+	text-decoration: none;
+	font-size: 80%;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.main-links a:last-child {
+	margin-right: 0;
+}
+
+.main-links a:hover {
+	border-bottom: 2px solid #e8930c;
+}
+
+.hero-area-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1140px;
+	transform: translate(-50%, -50%);
+	color: white; 
+}
+
+ /*// Moblile Menu bar */
+
+ [name='menu'] {
+ 	float: right;
+ 	color: #fff;
+ 	font-size: 140%;
+ 	display: none;
+ 	margin-top: 30px;
+ }
+
+/*// Stick */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.98);
+	z-index: 100;
+	box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .logo-black {
+	height: 50px;
+	margin: 5px 0;
+	float: left;
+	display: block;
+}
+
+.sticky .main-links { margin-top: 18px; }
+
+.sticky .main-links a:hover { border-bottom: 4px solid #e8930c; }
+
+.sticky .main-links a {
+	color: #555;
+	padding: 15px 0 ;
+	margin-right: 20px;
+	text-decoration: none;
+}
+
+
+.sticky .row {
+	padding: 0;
+}
+
+.sticky .logo {
+	display: none;
+}
+
+
+/* // Features Section
+--------------------------------------------------- */
+
+.desc {
+	width: 70%;
+	margin: 0 auto 20px;
+}
+
+.features ion-icon {
+	font-size: 350%;
+	color: #e8930c;
+}
+
+
+.box p {
+	font-size: 90%;
+	text-rendering: optimizeLegibility;
+}
+
+
+/* // Meals Section
+--------------------------------------------------- */
+.favourite-meals {
+	padding: 0;
+}
+
+.meals-showcase {
+	list-style: none;
+	overflow: hidden;
+}
+
+.meals-showcase li {
+	background: #000;
+	width: 25%;
+	float: left;
+	overflow: hidden;
+}
+
+.meals-showcase img {
+	opacity: 0.7;
+	width: 100%;
+	transform: scale(1.15);
+	vertical-align: bottom;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+.meals-showcase img:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* // Work Section
+--------------------------------------------------- */
+.how-it-works {
+	background: #eee;
+}
+
+
+.app-screen {
+	width: 40%;
+}
+
+.steps-box:first-child {
+	text-align: right;
+	padding-right: 3%;
+}
+
+.steps-box:last-child {
+	margin-top: 70px;
+}
+
+
+.work-step div {
+	border: 2px solid #e8930c;
+	color: #e8930c;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;	
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	font-size: 150%;
+	margin-right: 10px;
+}
+
+.work-step {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+.steps-box a img {
+	height: 40px;
+}
+
+.steps-box a {
+	margin-right: 20px;
+}
+
+/* // Cities Styles
+--------------------------------------------------- */
+
+.box img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.section-cities ion-icon {
+	color: #e8930c;
+	font-size: 20px;
+	text-align: center;
+	vertical-align: bottom;
+	margin-right: 5px;
+}
+
+.section-cities .box p {
+	margin-bottom: 10px;
+}
+
+.box p a:link, .box p a:visited {
+	text-decoration: none;
+	color: #e8930c;
+}
+
+.box p a:hover, .box p a:active {
+	color: #555;
+}
+
+/* // Testimonial Styles
+--------------------------------------------------- */
+.section-testimonial {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/back-customers.jpg) no-repeat fixed;
+	background-size: cover;
+	color: white;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 90%;
+	line-height: 145%;
+	padding: 2%;
+	padding-bottom: 0;
+	position: relative;
+	margin-top: 40px;
+}
+
+blockquote:before {
+	content: "\201C";
+	position: absolute;
+	display: block;
+	font-size: 500%;
+	top: -5px;
+	left: -3px;
+}
+
+cite {
+	display: block;
+	margin-top: 20px;
+	font-size: 90%;
+	padding: 0 10px;	
+}
+
+
+cite img {
+	height: 50px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 10px;
+
+}
+
+/* // Plans Section
+--------------------------------------------------- */
+.section-plans {
+	background: #eee;
+	padding-bottom: 50px;
+}
+
+.plan-box {
+	background: white;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+	box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+	padding: 10px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+	background: #fcfcfc;
+}
+
+.plan-box div:last-child {
+	text-align: center;
+}
+
+.plan-price {
+	font-size: 300%;
+	font-weight: 100;
+	color: #e8930c;
+	margin-bottom: 10px;
+}
+
+.plan-price span {
+	font-size: 30%;
+	font-weight: 300;
+}
+
+.plan-price-meal {
+	font-size: 80%;
+}
+
+.plan-box ul {
+	list-style: none;
+}
+
+.plan-box ul li {
+	padding: 5px 0;
+}
+
+.check-mark {
+	font-size: 80%;
+	color: #e8930c;
+	padding-right: 8px;
+}
+
+/* // Contact Form
+--------------------------------------------------- */
+
+.contact-form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+	width: 100%;
+	padding: 7px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type='submit'] {
+	border: none;
+}
+
+/* // Footer
+--------------------------------------------------- */
+
+footer {
+	background: #333;
+	font-size: 70%;
+	color: #888;
+}
+
+footer .row {
+	padding-top: 10px;
+}
+
+footer a {
+	text-transform: uppercase;
+	padding: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+footer a:link, footer a:visited {
+	color: #888;
+}
+
+.footer-nav a:active, .footer-nav a:hover {
+	color: #fff;
+}
+
+[name="logo-github"],
+[name="logo-linkedin"],
+[name="logo-facebook"],
+[name="logo-instagram"] {
+	transition: color 0.2s;
+}
+
+[name="logo-github"]:hover, [name="logo-github"]:active {
+	color: #fff;
+}
+
+[name="logo-linkedin"]:hover, [name="logo-linkedin"]:active {
+	color: #007bb5;
+}
+
+[name="logo-facebook"]:hover, [name="logo-facebook"]:active {
+	color: #3b5998;
+}
+
+[name="logo-instagram"]:hover, [name="logo-instagram"]:active {
+	color: #c32aa3;
+}
+
+.social-links {
+	float: right;
+	font-size: 130%;
+}
+
+.social-links a:last-child {
+	margin-right: 0;
+}
+
+.copyright {
+	text-align: center;
+	padding: 5px 0;
+
+}
+
+

@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1200px) {
+
+	.hero-area-text {
+		width: 100%;
+		padding: 0 2%;
+	}
+
+	.row { padding: 15px 2% 0; }
+}
+
+@media only screen and (max-width: 1024px) {
+
+	body { font-size: 18px; }
+
+	.footer-nav a { margin-right: 0; }
+
+	.desc { width: 80%; }
+
+	.steps-box:last-child { margin-top: 50px; }
+
+	.plan-price { font-size: 250%; }
+
+	h2 { font-size: 195%; }
+
+	blockquote { margin-top: 30px; }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	.hero-area-text { text-align: center; }
+
+	h1 { font-size: 400%; }
+	
+	.sticky .row { padding: 0 2%; }
+
+	.main-links { margin-right: 30px; margin-top: 25px;  display: none;}
+
+	[name="menu"] { display: inline-block; }
+
+	.main-links a { display: block; }
+
+	.main-links a:active, .main-links a:hover {	border: 0; }
+
+	.sticky .main-links a:active, .sticky .main-links a:hover {	border: 0; }
+
+	.sticky .main-links a { padding: 5px 0 ; }
+
+	.sticky [name="menu"] { color: #555; margin-top: 20px; }
+
+	.app-screen { width: 50%; }
+
+	.steps-box:last-child { margin-top: 20px; }
+
+	.work-step { margin-bottom: 45px; }
+
+	.desc { width: 91%; }
+
+	.section-testimonial h2 { padding: 0 2%; }
+
+	 .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+	.contact-form { width: 90%; }
+
+	.plan-box ul li {
+    padding: 6px 0;
+    font-size: 84%; 
+}
+
+	blockquote {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+	
+}
